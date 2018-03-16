@@ -1,0 +1,218 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script   type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="sud.js"></script>
+		<link rel="stylesheet" type = "text/css" href = "sudoku.css" media = "all" >
+	</head>
+	<body>
+		<div class="table-bordered">
+		<table class="table " id=to>
+			<tr id=tro1>
+				<td>
+					<table class="table ti" border=1 id=ti1>
+						<tr class=tr1>
+
+						<td id=1 class="tdi c1" >  </td>
+						<td id=2 class="tdi c1"> </td>
+						<td id=3 class="tdi c1"></td>
+						</tr>
+						<tr class=tr2>
+						<td id=4 class="tdi c1"></td>
+						<td id=5 class="tdi c1"></td>
+						<td id=6 class="tdi c1"></td>
+						</tr>
+						<tr class=tr3>
+						<td id=7 class="tdi c1"></td>
+						<td id=8 class="tdi c1"></td>
+						<td id=9 class="tdi c1"></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+				<table class="table ti" border=1 id=ti2>
+					<tr class=tr1>
+
+					<td id=10 class=tdi></td>
+					<td id=11 class=tdi></td>
+					<td id=12 class=tdi></td>
+					</tr>
+					<tr class=tr2 >
+					<td id=13 class=tdi></td>
+					<td id=14 class=tdi></td>
+					<td id=15 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=16 class=tdi></td>
+					<td id=17 class=tdi></td>
+					<td id=18 class=tdi></td>
+					</tr>
+				</table>
+				</td>
+				<td>
+				<table class="table ti" border=1 id=ti3>
+					<tr class=tr1>
+
+					<td id=19 class=tdi></td>
+					<td id=20 class=tdi></td>
+					<td id=21 class=tdi></td>
+					</tr>
+					<tr class=tr2>
+					<td id=22 class=tdi></td>
+					<td id=23 class=tdi></td>
+					<td id=24 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=25 class=tdi></td>
+					<td id=26 class=tdi></td>
+					<td id=27 class=tdi></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr id=tro2>
+				<td>
+					<table class="table ti" border=1 id=ti4>
+						<tr class=tr1>
+
+						<td id=28 class=tdi></td>
+						<td id=29 class=tdi></td>
+						<td id=30 class=tdi></td>
+						</tr>
+						<tr class=tr2>
+						<td id=31 class=tdi></td>
+						<td id=32  class=tdi></td>
+						<td id=33 class=tdi></td>
+						</tr>
+						<tr class=tr3>
+						<td id=34 class=tdi></td>
+						<td id=35 class=tdi></td>
+						<td id=36 class=tdi></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+				<table class="table ti" border=1 id=ti5>
+					<tr class=tr1>
+
+					<td id=37 class=tdi></td>
+					<td id=38 class=tdi></td>
+					<td id=39 class=tdi></td>
+					</tr>
+					<tr class=tr2>
+					<td id=40 class=tdi></td>
+					<td id=41 class=tdi></td>
+					<td id=42 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=43 class=tdi></td>
+					<td id=44 class=tdi></td>
+					<td id=45 class=tdi></td>
+					</tr>
+				</table>
+				</td>
+				<td>
+					<table class="table ti" border=1 id=ti6>
+					<tr class=tr1>
+
+					<td id=46 class=tdi></td>
+					<td id=47 class=tdi></td>
+					<td id=48 class=tdi></td>
+					</tr>
+					<tr class=tr2>
+					<td id=49 class=tdi></td>
+					<td id=50 class=tdi></td>
+					<td id=51 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=52 class=tdi></td>
+					<td id=53 class=tdi></td>
+					<td id=54 class=tdi></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr id=tro3>
+				<td>
+					<table class="table ti" border=1 id=ti7>
+						<tr class=tr1>
+
+						<td id=55 class=tdi></td>
+						<td id=56 class=tdi></td>
+						<td id=57 class=tdi></td>
+						</tr>
+						<tr class=tr2>
+						<td id=58 class=tdi></td>
+						<td id=59 class=tdi></td>
+						<td id=60 class=tdi></td>
+						</tr>
+						<tr class=tr3>
+						<td id=61 class=tdi></td>
+						<td id=62 class=tdi></td>
+						<td id=63 class=tdi></td>
+						</tr>
+						</table>
+				</td>
+				<td>
+				<table class="table ti" border=1 id=ti8>
+					<tr class=tr1>
+
+					<td id=64  class=tdi></td>
+					<td id=65 class=tdi></td>
+					<td id=66 class=tdi</td>
+					</tr>
+					<tr class=tr2>
+					<td id=67 class=tdi></td>
+					<td id=68 class=tdi></td>
+					<td id=69 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=70 class=tdi></td>
+					<td id=71 class=tdi></td>
+					<td id=72 class=tdi></td>
+					</tr>
+				</table>
+				</td>
+				<td><table class="table ti" border=1 id=ti9>
+
+					<tr class=tr1>
+					<td id=73 class=tdi></td>
+					<td id=74 class=tdi></td>
+					<td id=75 class=tdi></td>
+					</tr>
+					<tr class=tr2>
+					<td id=76 class=tdi></td>
+					<td id=77 class=tdi></td>
+					<td id=78 class=tdi></td>
+					</tr>
+					<tr class=tr3>
+					<td id=79 class=tdi></td>
+					<td id=80 class=tdi></td>
+					<td id=81 class=tdi></td>
+					</tr>
+				</table>
+				
+			  </td>	
+			 </tr>
+		</table>
+
+	</div>
+	<div id=div2>
+	<button type="button" class="btn btn-default b" id="b1" value=1>1</button>
+	<button type="button" class="btn btn-default  b" id="b2" value=2 >2</button>
+	<button type="button" class="btn btn-default b" id="b3" value=3>3</button>
+	<button type="button" class="btn btn-default b" id="b4" value=4>4</button>
+	<button type="button" class="btn btn-default b" id="b5" value=5>5</button>
+	<button type="button" class="btn btn-default b" id="b6" value="6">6</button>
+	<button type="button" class="btn btn-default b" id="b7" value=7>7</button>
+	<button type="button" class="btn btn-default b" id="b8" value=8>8</button>
+	<button type="button" class="btn btn-default b" id="b9" value=9>9</button>
+		</div>
+	</body>
+</html>
+
+
