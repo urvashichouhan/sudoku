@@ -23,3 +23,9 @@ table{
 #div2{
 	margin: 0 450px;
 }
+.warning {
+  color: red;
+}
+.success {
+  color: green;
+}

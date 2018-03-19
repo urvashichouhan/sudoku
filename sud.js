@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function() {	
 	var x=0,j=0,k=0,i=0,z=0,k1=0,c=0;
-	var a=[];
+	var cell;
 	var v=[];
 	var v1=[];
 	var v2=[];
@@ -8,51 +8,65 @@ $(document).ready(function() {
 	var t2=[];
 	var td = [];
 	var t3=[];
-	randomNum1 =15+ Math.round(Math.random() * 10);
-
-fun2();
-
-	function fun2()
-	{ 
-		var v1=[];
-		var t2=[];
-		for(i=0;i<randomNum1;i++)
-		{
-			randomNum2=Math.ceil(Math.random() * 9);
-			//console.log(randomNum2)
-			randomNum3=Math.ceil(Math.random() * 81);
-
-			var is=($("#"+randomNum3).attr("class"));
-			
-
-			//console.log(randomNum3)
-			v[i]=randomNum2;
-			v2[i]=randomNum3;
-			$('#'+randomNum3).text(randomNum2);		
+	var val;
+	randomNum1 =30+ Math.round(Math.random() * 10);		
+	console.log(randomNum1)
+	for(i=0;i<randomNum1;i++)
+	{
+		randomNum2=Math.ceil(Math.random() * 9);
+		randomNum3=Math.round(Math.random() * 80);
+		if($('#'+randomNum3).text()!=""){
+			i--;
+			continue;
 		}
-		//for(i1=1;i1<=9;i1++){
-		  $("#ti1").find('tr').each(function (i, el) {
-	      var $tds = $(this).find('td');
-	      for(i=0;i<3;i++){
-	        v1[j] = $tds.eq(i).attr("id");
-	        t2[j]=$tds.eq(i).text();
-
-	        j++;
-	      }	 
-	     
-			})
-
-		for(k=0;k<t3.length;k++)
-		{
-				for(k1=k+1;k1<t3.length;k1++)
-			{
-				if(t3[k]==t3[k1]);
-				c++;
-					console.log(c)
-			  }
+		else{
+			var a=test(randomNum2,randomNum3)
+			if(a==1){
+				i--;
+			}
 		}
-
 	}
-})
+	
+	$('.b').click(function(){
+		val=$(this).val();
+		$('.tdi').on('click',function(){
+			var cell=$(this).attr("id")
+			test1(val,cell)			
+		})			
+	})
+  function test1(val,cell){
+  	var className = $('#'+cell).attr('class');
+  	var table=parseInt(className.split(' ')[1].substr(1));
+		var row=parseInt(className.split(' ')[2].substr(1));
+		var col=parseInt(className.split(' ')[3].substr(1));
+		var table1=($('.t'+table).text());
+		var col1=($('.c'+col).text());
+		var row1=($('.r'+row).text());
+		if((table1.indexOf(val) == -1)&&(col1.indexOf(val) == -1)&&(row1.indexOf(val) == -1)){
+			$('#'+cell).addClass('success');}
+		
+		else{
+			$('#'+cell).addClass('warning');
+		}
+		$('#'+cell).text(val)		
+  }
+	function test(randomNum2,randomNum3){
+		var j1=0;
+		var className = $('#'+randomNum3).attr('class');
+		var table=parseInt(className.split(' ')[1].substr(1));
+		var row=parseInt(className.split(' ')[2].substr(1));
+		var col=parseInt(className.split(' ')[3].substr(1));
+		var table1=($('.t'+table).text());
+		var col1=($('.c'+col).text());
+		var row1=($('.r'+row).text());
+		if((table1.indexOf(randomNum2) == -1)&&(col1.indexOf(randomNum2) == -1)&&(row1.indexOf(randomNum2) == -1))				
+		$('#'+randomNum3).text(randomNum2)
+		else
+			++j1;	
+		return j1;
+	}
+		
+});
+
 
 
