@@ -1,5 +1,15 @@
+body{
+  background-image: url("sudoku.jpeg") ;   
+}
 table {
   border-collapse:collapse;
+   
+}
+.t0,.t2,.t4,.t6,.t8{
+background-image: url("sudoku1.jpg");
+}
+.t1,.t3,.t5,.t7{
+  background-image: url("sudoku2.jpeg");
 }
 td {
   padding: 0;
@@ -8,21 +18,25 @@ td {
 .big-box {
   border-style: solid;
   border-width: 2px;
+  position: relative;
+  margin:auto;
+  box-shadow: 10px 10px 5px ;
 }
 .cell {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   border-style: solid;
   border-width: 1px;
   font-size: 16pt;
   text-align: center;
   vertical-align:middle;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family:  sans-serif;
 }
 
 .center {
   text-align: center;
   vertical-align:middle;
+  font-family: Trebuchet MS Comic Sans MS  ;
 }
 td.button a {
   display: block;
@@ -45,29 +59,8 @@ img {
 }
 .warning {
   color: red;
+  font:bold;
 }
-a {
-  font-size: 16px;
-  color: black;
-}
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-@media print { 
-  table, table tr, table td { 
-    border-top: #000000 solid 1px; 
-    border-bottom: #000000 solid 1px; 
-    border-left: #000000 solid 1px; 
-    border-right: #000000 solid 1px; 
-  }
+
  
 }

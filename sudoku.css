@@ -1,31 +1,17 @@
-
-#to{
-	width:650px;
-	height: 600px;
-	text-align: center;
-
-}
 .ti{
-	width:200px;
-	height: 200px;
+	width:130px;
+	height:130px;
 	text-align: center;
-
-
 }
 .tdi{
 	width:20px;	
 }
-
 table{
 	margin: auto;
 	border:solid black;
 }
-#div2{
-	margin: 0 450px;
-}
-.warning {
-  color: red;
-}
-.success {
-  color: green;
+.container{
+	width:500px;
+	height: 600px;
+	text-align: center;
 }
